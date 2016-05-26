@@ -4,7 +4,10 @@ var keys = require('../configuration.js');
 var axios = require('axios');
 
 function getBarsList(location, radius) {
+<<<<<<< 6608e5616a1d2344d2847b3eb76e41183408a244
   // build request string
+=======
+>>>>>>> core: removed unnecessary comments
   let base = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
   let params = {
     // build this request object
@@ -12,7 +15,6 @@ function getBarsList(location, radius) {
     radius: radius,
     type: 'bar',
     opennow: true,
-    // rankby: 'distance',
     key: keys.GOOGLE_PLACES_API_KEY
   }
 // return results
@@ -32,7 +34,12 @@ function getBarsList(location, radius) {
         console.log(response.headers);
         console.log(response.config);
       }
+<<<<<<< 6608e5616a1d2344d2847b3eb76e41183408a244
     }); 
+=======
+    });  
+  
+>>>>>>> core: removed unnecessary comments
 }
 
 module.exports = getBarsList
