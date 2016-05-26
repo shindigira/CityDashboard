@@ -12,7 +12,6 @@ var getWeather = function(request, response) {
       console.log("Error getting weather: ", resp);
       response.status(503).send("Error getting weather!");
   });
-
 };
 
 var sendWeather = function (data, request, response) {
@@ -28,9 +27,7 @@ var sendWeather = function (data, request, response) {
         winddeg: data.wind.deg,
         windspeed: data.wind.speed
   };
-
   return response.status(200).send(objToSend);
-
 };
 
 module.exports = {
