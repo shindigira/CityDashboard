@@ -31,6 +31,7 @@ var apiHelper = function(data) {
     innerResult[theatreName] = (innerResult[theatreName]) ? innerResult[theatreName].concat(current.dateTime) : [current.dateTime];
     return innerResult;
   }, {});
+
     var currentTitle = curr.title;
 
     for (var key in showTimesAtTheatre) {
